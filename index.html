@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamours Beauty Salon & Spa | الفيحاء، جدة</title>
+    <meta
+      name="description"
+      content="Glamours Beauty Salon & Spa - مركز تجميل وسبا نسائي في حي الفيحاء، جدة"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #241a1d;
+        --cream: #f7f1ec;
+        --cream-soft: #fbf8f5;
+        --rose: #c98a92;
+        --rose-pale: #efd9db;
+        --wine: #5c2a35;
+        --wine-deep: #3f1c24;
+        --gold: #a9834f;
+        --line: rgba(36, 26, 29, 0.14);
+        --maxw: 1120px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "Tajawal", sans-serif;
+        font-weight: 400;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1,
+      h2,
+      h3,
+      .display {
+        font-family: "Amiri", serif;
+        font-weight: 700;
+        margin: 0;
+        color: var(--wine-deep);
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 28px;
+      }
+      @media (max-width: 420px) {
+        .wrap {
+          padding: 0 18px;
+        }
+      }
+      :focus-visible {
+        outline: 2px solid var(--wine);
+        outline-offset: 3px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* ---------- top bar ---------- */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(247, 241, 236, 0.9);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .topbar .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+      .brand {
+        font-family: "Amiri", serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--wine-deep);
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .topbar nav {
+        display: flex;
+        gap: 26px;
+        font-size: 0.95rem;
+      }
+      .topbar nav a {
+        color: var(--ink);
+        opacity: 0.8;
+        transition: opacity 0.2s;
+      }
+      .topbar nav a:hover {
+        opacity: 1;
+      }
+      .book-btn {
+        background: var(--wine);
+        color: var(--cream-soft);
+        padding: 10px 22px;
+        border-radius: 2px;
+        font-size: 0.9rem;
+        box-shadow: 0 1px 0 var(--gold);
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .book-btn:hover {
+        background: var(--wine-deep);
+      }
+      .topbar .nav-links,
+      .topbar .book-btn {
+        display: flex;
+      }
+      @media (max-width: 760px) {
+        .topbar nav {
+          display: none;
+        }
+      }
+      @media (max-width: 420px) {
+        .brand {
+          font-size: 1.15rem;
+        }
+        .book-btn {
+          padding: 9px 14px;
+          font-size: 0.8rem;
+        }
+      }
+
+      /* ---------- hero ---------- */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 96px 0 84px;
+      }
+      .hero-blob {
+        position: absolute;
+        inset-inline-end: -120px;
+        top: -140px;
+        width: 520px;
+        height: 520px;
+        z-index: 0;
+        opacity: 0.55;
+      }
+      .hero .wrap {
+        position: relative;
+        z-index: 1;
+      }
+      .hero-eyebrow {
+        color: var(--wine);
+        font-size: 0.95rem;
+        margin-bottom: 18px;
+        opacity: 0.85;
+      }
+      .hero h1 {
+        font-size: clamp(2.6rem, 6vw, 4.6rem);
+        line-height: 1.15;
+        max-width: 11ch;
+        animation: riseIn 0.8s ease both;
+      }
+      .hero h1 em {
+        font-style: italic;
+        color: var(--rose);
+      }
+      .hero p.lead {
+        max-width: 46ch;
+        font-size: 1.15rem;
+        margin-top: 22px;
+        color: var(--ink);
+        opacity: 0.85;
+      }
+      @keyframes riseIn {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-actions {
+        display: flex;
+        gap: 16px;
+        margin-top: 34px;
+        flex-wrap: wrap;
+      }
+      .btn-primary,
+      .btn-ghost {
+        padding: 14px 30px;
+        font-size: 1rem;
+        border-radius: 2px;
+        display: inline-block;
+        transition:
+          transform 0.15s ease,
+          background 0.2s;
+      }
+      .btn-primary {
+        background: var(--wine);
+        color: var(--cream-soft);
+      }
+      .btn-primary:hover {
+        background: var(--wine-deep);
+        transform: translateY(-1px);
+      }
+      .btn-ghost {
+        border: 1px solid var(--ink);
+        color: var(--ink);
+      }
+      .btn-ghost:hover {
+        border-color: var(--wine);
+        color: var(--wine);
+      }
+      .hero-meta {
+        margin-top: 56px;
+        display: flex;
+        gap: 38px;
+        flex-wrap: wrap;
+        border-top: 1px solid var(--line);
+        padding-top: 26px;
+      }
+      .hero-meta div {
+        font-size: 0.92rem;
+        color: var(--ink);
+        opacity: 0.8;
+      }
+      .hero-meta b {
+        display: block;
+        font-family: "Amiri", serif;
+        color: var(--wine-deep);
+        font-size: 1.15rem;
+        font-weight: 700;
+      }
+
+      /* ---------- section shell ---------- */
+      section {
+        padding: 72px 0;
+      }
+      .section-head {
+        max-width: 60ch;
+        margin-bottom: 44px;
+      }
+      .section-head .kicker {
+        color: var(--wine);
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .section-head h2 {
+        font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+      }
+      .divider {
+        height: 1px;
+        background: var(--line);
+        border: 0;
+        margin: 0;
+      }
+
+      /* ---------- about ---------- */
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+        align-items: center;
+      }
+      .about-frame {
+        border: 1px solid var(--gold);
+        padding: 30px;
+        position: relative;
+        background: var(--cream-soft);
+      }
+      .about-frame p {
+        font-size: 1.05rem;
+        opacity: 0.9;
+      }
+      .about-list {
+        list-style: none;
+        margin: 22px 0 0;
+        padding: 0;
+        display: grid;
+        gap: 12px;
+      }
+      .about-list li {
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+        font-size: 0.98rem;
+      }
+      .about-list li::before {
+        content: "—";
+        color: var(--rose);
+      }
+      @media (max-width: 820px) {
+        .about {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ---------- services (spa-menu style, not cards) ---------- */
+      .menu-cat {
+        margin-bottom: 38px;
+      }
+      .menu-cat h3 {
+        font-size: 1.4rem;
+        color: var(--wine);
+        margin-bottom: 6px;
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+      }
+      .menu-cat h3::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--line);
+      }
+      .menu-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 13px 0;
+        border-bottom: 1px dashed var(--line);
+        font-size: 1rem;
+      }
+      .menu-row:last-child {
+        border-bottom: 0;
+      }
+      .menu-row .name {
+        color: var(--ink);
+      }
+      .menu-row .note {
+        display: block;
+        font-size: 0.82rem;
+        opacity: 0.6;
+        margin-top: 3px;
+      }
+      .menu-row .price {
+        color: var(--wine-deep);
+        font-weight: 700;
+        white-space: nowrap;
+        font-family: "Amiri", serif;
+      }
+      #services-status {
+        opacity: 0.7;
+        font-size: 0.92rem;
+      }
+
+      /* ---------- hours / location ---------- */
+      .visit {
+        background: var(--wine-deep);
+        color: var(--cream-soft);
+      }
+      .visit h2 {
+        color: var(--cream-soft);
+      }
+      .visit .section-head .kicker {
+        color: var(--rose);
+      }
+      .visit-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        align-items: start;
+      }
+      .visit-card {
+        border: 1px solid rgba(247, 241, 236, 0.22);
+        padding: 28px;
+      }
+      .visit-card h3 {
+        color: var(--cream-soft);
+        font-size: 1.2rem;
+        margin-bottom: 14px;
+      }
+      .visit-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        font-size: 0.95rem;
+        border-bottom: 1px solid rgba(247, 241, 236, 0.12);
+      }
+      .visit-row span:first-child {
+        opacity: 0.7;
+      }
+      .map-embed {
+        width: 100%;
+        height: 340px;
+        border: 0;
+        filter: grayscale(0.15) sepia(0.08);
+      }
+      @media (max-width: 820px) {
+        .visit-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ---------- footer ---------- */
+      footer {
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.85rem;
+        opacity: 0.6;
+      }
+      .whatsapp-fab {
+        position: fixed;
+        bottom: 22px;
+        inset-inline-start: 22px;
+        z-index: 60;
+        background: var(--wine);
+        color: var(--cream-soft);
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+      }
+      .whatsapp-fab:hover {
+        background: var(--wine-deep);
+      }
+      .ltr-num {
+        direction: ltr;
+        unicode-bidi: isolate;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="wrap">
+        <a href="#top" class="brand">Glamours</a>
+        <nav class="nav-links">
+          <a href="#about">مين احنا</a>
+          <a href="#services">الخدمات</a>
+          <a href="#visit">زوروا الصالون</a>
+        </nav>
+        <a class="book-btn" id="cta-whatsapp-top" target="_blank" rel="noopener"
+          >احجزي الآن</a
+        >
+      </div>
+    </div>
+
+    <header class="hero" id="top">
+      <svg
+        class="hero-blob"
+        viewBox="0 0 500 500"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          fill="#c98a92"
+          d="M420,300Q400,400,300,430Q200,460,140,380Q80,300,120,210Q160,120,260,100Q360,80,410,170Q460,260,420,300Z"
+        />
+      </svg>
+      <div class="wrap">
+        <span class="hero-eyebrow">حي الفيحاء، جدة</span>
+        <h1>جمالكِ <em>يبدأ</em> من هنا</h1>
+        <p class="lead">
+          Glamours Beauty Salon &amp; Spa — مساحة نسائية خاصة للعناية بالشعر
+          والبشرة والجمال، في قلب الفيحاء.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="btn-primary"
+            id="cta-whatsapp-hero"
+            target="_blank"
+            rel="noopener"
+            >احجزي موعدك عبر واتساب</a
+          >
+          <a class="btn-ghost" href="#services">تصفّحي الخدمات</a>
+        </div>
+        <div class="hero-meta">
+          <div><b id="meta-hours">—</b>مواعيد الدوام</div>
+          <div><b id="meta-phone" class="ltr-num">—</b>للتواصل والحجز</div>
+          <div><b>حي الفيحاء</b>الموقع في جدة</div>
+        </div>
+      </div>
+    </header>
+
+    <hr class="divider" />
+
+    <section id="about">
+      <div class="wrap about">
+        <div>
+          <div class="section-head">
+            <span class="kicker">عن الصالون</span>
+            <h2>عناية تليق بكِ</h2>
+          </div>
+          <p id="about-text" style="opacity: 0.85; font-size: 1.05rem">
+            نحرص في Glamours على تقديم تجربة عناية هادئة ومريحة لكل عميلة، بأيدٍ
+            متخصصة وأجواء نسائية خاصة من أول لحظة تدخلين فيها الصالون.
+          </p>
+        </div>
+        <div class="about-frame">
+          <p
+            style="
+              color: var(--wine-deep);
+              font-family: &quot;Amiri&quot;, serif;
+              font-size: 1.2rem;
+            "
+          >
+            لماذا Glamours؟
+          </p>
+          <ul class="about-list">
+            <li>فريق متخصص في العناية بالشعر والبشرة والمكياج</li>
+            <li>خصوصية تامة — صالون نسائي بالكامل</li>
+            <li>حجز سهل وسريع عبر واتساب</li>
+            <li>موقع مميز وسط حي الفيحاء</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">قائمة الخدمات</span>
+          <h2>خدماتنا</h2>
+        </div>
+        <div id="services-container">
+          <p id="services-status">جاري تحميل الخدمات…</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">زوروا الصالون</span>
+          <h2>نستقبلكِ في الفيحاء</h2>
+        </div>
+        <div class="visit-grid">
+          <div class="visit-card">
+            <h3>معلومات التواصل</h3>
+            <div class="visit-row">
+              <span>العنوان</span><span id="v-address">—</span>
+            </div>
+            <div class="visit-row">
+              <span>الهاتف / واتساب</span
+              ><span id="v-phone" class="ltr-num">—</span>
+            </div>
+            <div class="visit-row">
+              <span>المواعيد</span><span id="v-hours">—</span>
+            </div>
+            <div style="margin-top: 22px">
+              <a
+                class="btn-primary"
+                id="cta-whatsapp-visit"
+                target="_blank"
+                rel="noopener"
+                style="background: var(--rose); color: var(--wine-deep)"
+                >راسلينا على واتساب</a
+              >
+            </div>
+          </div>
+          <iframe
+            class="map-embed"
+            id="map-frame"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        © <span id="year"></span> Glamours Beauty Salon &amp; Spa — حي الفيحاء،
+        جدة
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-fab"
+      id="cta-whatsapp-fab"
+      target="_blank"
+      rel="noopener"
+      aria-label="راسلينا على واتساب"
+    >
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5s-.6-1.5-.9-2c-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3z"
+          fill="#fff"
+        />
+        <path
+          d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"
+          stroke="#fff"
+          stroke-width="1.3"
+        />
+      </svg>
+    </a>
+
+    <script>
+      /* ==============================================================
+   إعدادات الموقع — CONFIG
+   هذا هو المكان الوحيد اللي يحتاج صاحب المشروع (بيكو) يعدله.
+   شوف ملف README.md للتعليمات كاملة خطوة بخطوة.
+   ============================================================== */
+      const CONFIG = {
+        // روابط CSV من "نشر على الويب" في جوجل شيتس (فارغة الآن = تُستخدم القيم الافتراضية بالأسفل)
+        servicesCSVUrl:
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vRnTbll_G5n9hYdSO6Ne-1HqDMN4NXE_GZ-1HVvRoSkUQFrW9ECkRDjVPCYRXppxr9SDjLrtmw_qkYS/pub?gid=173376806&single=true&output=tsv",
+        infoCSVUrl:
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vRnTbll_G5n9hYdSO6Ne-1HqDMN4NXE_GZ-1HVvRoSkUQFrW9ECkRDjVPCYRXppxr9SDjLrtmw_qkYS/pub?gid=2302437&single=true&output=tsv",
+
+        // قيم افتراضية (من بيانات خرائط جوجل الرسمية للمحل) تُستخدم لحد ما يتم ربط الشيت
+        whatsappNumber: "966536590983",
+        phone: "+966 53 659 0983",
+        address: "حي الفيحاء، جدة 22246",
+        hours: "يوميًا من 4 عصرًا حتى 11 مساءً",
+        aboutText:
+          "نحرص في Glamours على تقديم تجربة عناية هادئة ومريحة لكل عميلة، بأيدٍ متخصصة وأجواء نسائية خاصة من أول لحظة تدخلين فيها الصالون.",
+        mapLat: 21.487576,
+        mapLng: 39.217106,
+
+        // خدمات افتراضية تظهر لحد ما يتم تعبئة شيت الخدمات (الأسعار "عند الحجز" وليست نهائية)
+        defaultServices: [
+          {
+            category: "الشعر",
+            name: "قص وتصفيف",
+            price: "عند الحجز",
+            note: "",
+          },
+          {
+            category: "الشعر",
+            name: "صبغة وهايلايت",
+            price: "عند الحجز",
+            note: "",
+          },
+          {
+            category: "البشرة",
+            name: "تنظيف بشرة",
+            price: "عند الحجز",
+            note: "",
+          },
+          {
+            category: "المكياج",
+            name: "مكياج سهرة",
+            price: "عند الحجز",
+            note: "",
+          },
+          {
+            category: "الأظافر",
+            name: "منكير / باديكير",
+            price: "عند الحجز",
+            note: "",
+          },
+        ],
+      };
+
+      function waLink(text) {
+        return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
+      }
+
+      function csvToRows(text) {
+        // يتعرف تلقائيًا إذا الملف مفصول بفاصلة (CSV) أو بـ Tab (TSV)
+        const firstLine = text.split(/\r?\n/, 1)[0] || "";
+        const delim =
+          firstLine.split("\t").length > firstLine.split(",").length
+            ? "\t"
+            : ",";
+        const rows = [];
+        let row = [],
+          cur = "",
+          inQuotes = false;
+        for (let i = 0; i < text.length; i++) {
+          const c = text[i];
+          if (inQuotes) {
+            if (c === '"' && text[i + 1] === '"') {
+              cur += '"';
+              i++;
+            } else if (c === '"') {
+              inQuotes = false;
+            } else {
+              cur += c;
+            }
+          } else {
+            if (c === '"') {
+              inQuotes = true;
+            } else if (c === delim) {
+              row.push(cur);
+              cur = "";
+            } else if (c === "\n" || c === "\r") {
+              if (c === "\r" && text[i + 1] === "\n") i++;
+              row.push(cur);
+              cur = "";
+              if (row.some((v) => v.trim() !== "")) rows.push(row);
+              row = [];
+            } else {
+              cur += c;
+            }
+          }
+        }
+        if (cur !== "" || row.length) {
+          row.push(cur);
+          rows.push(row);
+        }
+        return rows.map((r) => r.map((v) => v.trim()));
+      }
+
+      async function fetchCSV(url) {
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) throw new Error("CSV fetch failed");
+        return csvToRows(await res.text());
+      }
+
+      function renderServices(items) {
+        const container = document.getElementById("services-container");
+        if (!items.length) {
+          container.innerHTML =
+            "<p id='services-status'>سيتم إضافة الخدمات قريبًا.</p>";
+          return;
+        }
+        const byCat = {};
+        items.forEach((it) => {
+          if (!it.name) return;
+          (byCat[it.category || "خدمات"] ||= []).push(it);
+        });
+        container.innerHTML = Object.entries(byCat)
+          .map(
+            ([cat, rows]) => `
+    <div class="menu-cat">
+      <h3>${cat}</h3>
+      ${rows
+        .map(
+          (r) => `
+        <div class="menu-row">
+          <span class="name">${r.name}${r.note ? `<span class="note">${r.note}</span>` : ""}</span>
+          <span class="price">${r.price || "عند الحجز"}</span>
+        </div>
+      `,
+        )
+        .join("")}
+    </div>
+  `,
+          )
+          .join("");
+      }
+
+      async function loadServices() {
+        if (CONFIG.servicesCSVUrl) {
+          try {
+            const rows = await fetchCSV(CONFIG.servicesCSVUrl);
+            const [header, ...data] = rows;
+            const idx = {
+              category: header.findIndex((h) => /قسم|category/i.test(h)),
+              name: header.findIndex((h) => /خدمة|name/i.test(h)),
+              price: header.findIndex((h) => /سعر|price/i.test(h)),
+              note: header.findIndex((h) => /ملاحظ|note/i.test(h)),
+            };
+            const items = data.map((r) => ({
+              category: idx.category > -1 ? r[idx.category] : "",
+              name: idx.name > -1 ? r[idx.name] : "",
+              price: idx.price > -1 ? r[idx.price] : "",
+              note: idx.note > -1 ? r[idx.note] : "",
+            }));
+            renderServices(items);
+            return;
+          } catch (e) {
+            /* fall through to default */
+          }
+        }
+        renderServices(CONFIG.defaultServices);
+      }
+
+      async function loadInfo() {
+        let info = {
+          phone: CONFIG.phone,
+          address: CONFIG.address,
+          hours: CONFIG.hours,
+          about: CONFIG.aboutText,
+        };
+        if (CONFIG.infoCSVUrl) {
+          try {
+            const rows = await fetchCSV(CONFIG.infoCSVUrl);
+            const map = {};
+            rows.forEach(([k, v]) => {
+              if (k) map[k.trim()] = (v || "").trim();
+            });
+            info.phone = map["الهاتف"] || map["phone"] || info.phone;
+            info.address = map["العنوان"] || map["address"] || info.address;
+            info.hours = map["المواعيد"] || map["hours"] || info.hours;
+            info.about = map["نبذة"] || map["about"] || info.about;
+          } catch (e) {
+            /* fall through to defaults */
+          }
+        }
+
+        document.getElementById("meta-hours").textContent = info.hours;
+        document.getElementById("meta-phone").textContent = info.phone;
+        document.getElementById("v-address").textContent = info.address;
+        document.getElementById("v-phone").textContent = info.phone;
+        document.getElementById("v-hours").textContent = info.hours;
+        document.getElementById("about-text").textContent = info.about;
+
+        const msg = "السلام عليكم، أبي أستفسر عن حجز موعد في Glamours 🌸";
+        [
+          "cta-whatsapp-top",
+          "cta-whatsapp-hero",
+          "cta-whatsapp-visit",
+          "cta-whatsapp-fab",
+        ].forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) el.href = waLink(msg);
+        });
+      }
+
+      document.getElementById("map-frame").src =
+        `https://www.google.com/maps?q=${CONFIG.mapLat},${CONFIG.mapLng}&z=16&output=embed`;
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      loadInfo();
+      loadServices();
+    </script>
+  </body>
+</html>
